@@ -3110,7 +3110,7 @@ void ScintillaGTK::ClassInit(OBJECT_CLASS* object_class, GtkWidgetClass *widget_
 	// of the signal handlers here (those that currently attached to wDraw
 	// in Initialise() may require coordinate translation?)
 
-	object_class->dispose = Dispose;
+	//object_class->dispose = Dispose;
 	object_class->finalize = Destroy;
 #if GTK_CHECK_VERSION(3,0,0)
 	widget_class->get_preferred_width = GetPreferredWidth;
