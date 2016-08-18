@@ -1214,6 +1214,7 @@ long Platform::SendScintillaPointer(WindowID /*w*/,
 	return 0;
 }
 
+#if 0
 int Platform::Minimum(int a, int b)
 {
 	return qMin(a, b);
@@ -1223,6 +1224,7 @@ int Platform::Maximum(int a, int b)
 {
 	return qMax(a, b);
 }
+#endif
 
 int Platform::Clamp(int val, int minVal, int maxVal)
 {

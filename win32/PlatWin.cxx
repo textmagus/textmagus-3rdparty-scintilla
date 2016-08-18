@@ -3097,6 +3097,7 @@ int Platform::DBCSCharMaxLength() {
 
 // These are utility functions not really tied to a platform
 
+#if 0
 int Platform::Minimum(int a, int b) {
 	if (a < b)
 		return a;
@@ -3110,6 +3111,7 @@ int Platform::Maximum(int a, int b) {
 	else
 		return b;
 }
+#endif
 
 //#define TRACE
 
