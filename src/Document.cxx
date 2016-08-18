@@ -2988,13 +2988,13 @@ const char *TreRegex::SubstituteByPosition(Document *doc, const char *text,
 
 #ifdef SCI_NAMESPACE
 
-RegexSearchBase *Scintilla::CreateRegexSearch(CharClassify *charClassTable) {
+RegexSearchBase *Scintilla::CreateRegexSearch(CharClassify * /*charClassTable*/ ) {
 	return new TreRegex();
 }
 
 #else
 
-RegexSearchBase *CreateRegexSearch(CharClassify *charClassTable) {
+RegexSearchBase *CreateRegexSearch(CharClassify * /*charClassTable*/ ) {
 	return new TreRegex();
 }
 
